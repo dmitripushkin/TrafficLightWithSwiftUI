@@ -13,9 +13,6 @@ struct ContentView: View {
         case red, yellow, green
     }
     
-    private let lightIsOn = 1.0
-    private let lightIsOff = 0.3
-    
     @State private var currentLightIs = CurrentLight.red
     
     @State private var redLightState = 0.3
@@ -23,6 +20,9 @@ struct ContentView: View {
     @State private var greenLightState = 0.3
     
     @State private var buttonTitle = "START"
+    
+    private let lightIsOn = 1.0
+    private let lightIsOff = 0.3
     
     private var customizedButton: some View {
         Text(buttonTitle)
