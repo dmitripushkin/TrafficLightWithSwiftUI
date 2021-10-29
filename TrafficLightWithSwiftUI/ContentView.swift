@@ -14,31 +14,13 @@ enum CurrentLight {
 struct ContentView: View {
     
     @State private var currentLightIs = CurrentLight.red
-    
-    @State private var redLightState = 0.3
-    @State private var yellowLightState = 0.3
-    @State private var greenLightState = 0.3
-    
     @State private var buttonTitle = "START"
     
     private func switchColor() {
-        
-        let lightIsOn = 1.0
-        let lightIsOff = 0.3
-        
         switch currentLightIs {
-        case .red:
-            greenLightState = lightIsOff
-            redLightState = lightIsOn
-            currentLightIs = .yellow
-        case .yellow:
-            redLightState = lightIsOff
-            yellowLightState = lightIsOn
-            currentLightIs = .green
-        case .green:
-            yellowLightState = lightIsOff
-            greenLightState = lightIsOn
-            currentLightIs = .red
+        case .red: currentLightIs = .yellow
+        case .yellow: currentLightIs = .green
+        case .green: currentLightIs = .red
         }
     }
 }
@@ -49,11 +31,15 @@ extension ContentView {
             Color(.black)
                 .ignoresSafeArea()
             VStack {
-                LightsView(redLightState: redLightState, yellowLightState: yellowLightState, greenLightState: greenLightState)
+                LightsView(
+                    redLightState: currentLightIs == .red ? 1 : 0.3,
+                    yellowLightState: currentLightIs == .yellow ? 1 : 0.3,
+                    greenLightState: currentLightIs == .green ? 1 : 0.3)
                 
                 Spacer()
                 
-                StartButtonView(title: buttonTitle) { if buttonTitle == "START" {
+                StartButtonView(title: buttonTitle) {
+                    if buttonTitle == "START" {
                     buttonTitle = "NEXT"
                 }
                     switchColor()
