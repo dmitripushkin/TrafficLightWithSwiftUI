@@ -40,12 +40,12 @@ extension ContentView {
                 
                 StartButtonView(title: buttonTitle) {
                     if buttonTitle == "START" {
-                    buttonTitle = "NEXT"
-                }
+                        buttonTitle = "NEXT"
+                    }
                     switchColor()
                 }
-                .padding()
             }
+            .padding()
         }
     }
 }
