@@ -13,6 +13,7 @@
 		BFF08B0E2728075C0021F908 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF08B0D2728075C0021F908 /* Preview Assets.xcassets */; };
 		BFF08B1B272964360021F908 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF08B1A272964360021F908 /* CircleView.swift */; };
 		BFF08B1D27296B6B0021F908 /* LightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF08B1C27296B6B0021F908 /* LightsView.swift */; };
+		BFF08B21272AAE2A0021F908 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF08B20272AAE2A0021F908 /* StartButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		BFF08B0D2728075C0021F908 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BFF08B1A272964360021F908 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		BFF08B1C27296B6B0021F908 /* LightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightsView.swift; sourceTree = "<group>"; };
+		BFF08B20272AAE2A0021F908 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				BFF08B082728075B0021F908 /* ContentView.swift */,
 				BFF08B1C27296B6B0021F908 /* LightsView.swift */,
 				BFF08B1A272964360021F908 /* CircleView.swift */,
+				BFF08B20272AAE2A0021F908 /* StartButtonView.swift */,
 				BFF08B0A2728075C0021F908 /* Assets.xcassets */,
 				BFF08B0C2728075C0021F908 /* Preview Content */,
 			);
@@ -146,6 +149,7 @@
 				BFF08B1B272964360021F908 /* CircleView.swift in Sources */,
 				BFF08B1D27296B6B0021F908 /* LightsView.swift in Sources */,
 				BFF08B092728075B0021F908 /* ContentView.swift in Sources */,
+				BFF08B21272AAE2A0021F908 /* StartButtonView.swift in Sources */,
 				BFF08B072728075B0021F908 /* TrafficLightWithSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

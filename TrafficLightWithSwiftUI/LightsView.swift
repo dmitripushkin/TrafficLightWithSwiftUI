@@ -11,22 +11,21 @@ import SwiftUI
 
 struct LightsView: View {
     
-    var redLight: Double
-    var yellowLight: Double
-    var greenLight: Double
-    
+    let redLightState: Double
+    let yellowLightState: Double
+    let greenLightState: Double
     
     var body: some View {
         VStack(alignment:.center, spacing: 25){
-            CircleView(color: .red, opacity: redLight)
-            CircleView(color: .yellow, opacity: yellowLight)
-            CircleView(color: .green, opacity: greenLight)
+            CircleView(color: .red, opacity: redLightState)
+            CircleView(color: .yellow, opacity: yellowLightState)
+            CircleView(color: .green, opacity: greenLightState)
         }
     }
 }
 
 struct LightsView_Previews: PreviewProvider {
     static var previews: some View {
-        LightsView(redLight: 1, yellowLight: 1, greenLight: 1)
+        LightsView(redLightState: 1, yellowLightState: 1, greenLightState: 1)
     }
 }
